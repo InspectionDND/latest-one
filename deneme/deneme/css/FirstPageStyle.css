@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --height-section:20vh;
+    --fontSize: calc(((100vw - 92vw) + (100vh - 92vh)) / 2);
+}
+
+body{
+    background-color: #111;
+    font-family: 'Charm', cursive;
+}
+
+.container{
+    width: 80vw;
+    height: 100vh;
+    margin: auto; 
+    
+    border-radius: 20px;
+}
+
+.logo{
+    
+    position: fixed;
+    color: rgb(180, 174, 174);
+    text-align: center;
+    top: calc(100vh - 80vh);
+    left: 0px;
+    right: 0px;
+    font-size: var(--fontSize);
+
+}
+
+.slideToggle{
+    height: 30%;
+    background: #111;
+    position: absolute;
+    top: calc(-30% - 2px);
+    text-align: center;
+    border: 2px solid white;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+
+}
+
+.menuImg{
+    width: 60%;
+    height: 100%;
+
+
+}
+
+.section{
+    
+    width: 80vw;
+    height: var(--height-section);
+    position: fixed;
+    top: calc(100vh - var(--height-section));
+    border-top: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    
+    justify-content: center;
+    
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    
+    
+}
+
+.sectionBoard{
+    width: 100%;
+    height: 100%;
+    
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button{
+    
+    width: 10%;
+    height: 60%;
+    margin: 0px auto;
+    font-size: calc(((100vw - 96vw) + (100vh - 96vh)) / 2);
+    background-color: #111;;
+    border: 3px solid rgb(133, 130, 130);
+    border-radius: 20px;
+    color: rgb(104, 103, 103);
+    cursor: pointer;
+    outline: none;
+    transition:all 0.5s;
+    
+}
